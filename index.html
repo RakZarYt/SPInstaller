@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>SPInstaller</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="container__main">
+            <h2 class="heading">Добро пожаловать!</h2>
+            <p class="text">Качайте проги</p>
+        </div>
+        <div class="container__menu">
+            <button class="button" onclick="togglePopup(menu)">МЕНЮ</button>
+        </div>
+    </div>
+
+    <div class="menu" style="display: none;">
+        <div class="menu__inner">
+            <p class="menu__title heading">ПРОГИ</p>
+            <p class="text" onclick="content(1); togglePopup(menu)">Keepth</a></p>
+            <p class="text" onclick="content(2); togglePopup(menu)">Timer</a></p>
+            <p class="text" onclick="content(3); togglePopup(menu)">To-do list</a></p>
+            <p class="text" onclick="content(4); togglePopup(menu)">ZPower</a></p>
+            <p class="text" id="special" onclick="togglePopup(menu)">Вернуться</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
