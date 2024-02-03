@@ -480,3 +480,7 @@ html {
     color: rgb(221, 210, 210);
     cursor: pointer;
 }
+
+.text_image {
+    width: 18px;
+}

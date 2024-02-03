@@ -45,16 +45,30 @@ let contentInner = [
             ['7 TO-DO List', 'https://drive.google.com/file/d/171Qu9fXi0yGp0hmNtudFXSBaIZkvWs5M/view?usp=drive_link'],
             ['8 TO-DO List', 'https://drive.google.com/file/d/1sYYKvLw1TyKEDe4RRZyXFnq4NIGEypC5/view?usp=drive_link'],
             ['9 TO-DO List', 'https://drive.google.com/file/d/1mSYRn6n7B8CQNqbUcBQtd7Cqut0pRQo1/view?usp=drive_link'],
+            ['10 TO-DO List Electron', 'https://drive.google.com/file/d/1NdLY0lkHxaxKRT3eRAFHDzxwUsJgYWxY/view?usp=drive_link'],
+            ['10.1 TO-DO List DEV', 'https://drive.google.com/file/d/1ziEgoDn4G4q1ggyY_74QRN4r9gkGDePi/view?usp=drive_link'],
+            ['10.2 TO-DO List DEV', 'https://drive.google.com/file/d/1TuL_Cy0xZ_rwooo4urNuDmF3QHgV9cHQ/view?usp=drive_link'],
         ],
     },
 
     {
         'title': 'ZPower',
         'id': 4,
-        'description': `Простая игра, моя первая :D`,
+        'description': `<img src="source/img/zp logo.png" alt="" class="image text_image"> Простая игра, моя первая :D`,
         'link': [
             ['ZP V01', 'https://drive.google.com/file/d/1TdCnSGa9LFDJ7piWKl1S-ClpMxyXCONL/view?usp=drive_link'],
             ['ZP V02', 'https://drive.google.com/file/d/1XsjcrlKY7YcveBs6KRLbDjYK0kMd9B2W/view?usp=drive_link'],
+        ],
+    },
+
+    {
+        'title': 'Fake Twich Chat',
+        'id': 5,
+        'description': `OBS-Fake-Chat - Это фейк-чат для приложения OBS.`,
+        'link': [
+            ['1 выпуск', 'https://drive.google.com/file/d/1iPd1wbMy5jAaGHjzpisVkhvARuXXjaKv/view?usp=drive_link'],
+            ['2 выпуск', 'https://drive.google.com/file/d/1i84lcjeT3BFO9h4AUNFLOi2TsVZ-VG_q/view?usp=drive_link'],
+            ['3 выпуск', 'https://drive.google.com/file/d/1jzuKTQuHtDjuiQZ-jJiquyz3R8-kxxpf/view?usp=drive_link'],
         ],
     },
 ]
@@ -85,7 +99,7 @@ function content(contentID) {
             <div class="container__main">
                 <h2 class="heading">${contentInner[i]['title']}</h2>
                 <p class="text">${contentInner[i]['description']}</p>
-                <p class="text"><a href="${contentInner[i]['link'][0][1]}" class="link">${contentInner[i]['link'][0][0]}</a></p>
+                <p class="text"><a href="${contentInner[i]['link'][0][1]}" class="link">${contentInner[i]['link'][contentInner[i]['link'].length - 1][0]}</a></p>
             </div>
 
             <div class="container__footer">
